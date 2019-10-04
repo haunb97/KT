@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai2</title>
+</head>
+<body>
+<script>
+    let num = parseInt(prompt('nhập vào một số nguyên'));
+    while (num <=1 ){
+        num = parseInt(prompt('nhập vào một số nguyên dương '));
+
+    }
+    function hau() {
+        for (let i = 2; i < num; i++) {
+            if (num % i == 0) {
+                return false ;
+            }
+            return true ;
+        }
+
+    }
+
+    if (hau()==false){alert(num+ ' không phải số nguyên tố')}
+    else {alert(num+' là số nguyên tố')}
+
+
+</script>
+
+</body>
+</html>

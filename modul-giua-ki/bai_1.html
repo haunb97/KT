@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai_1</title>
+</head>
+<body>
+<script>
+    let toan = parseInt(prompt('nhập vào điểm toán'));
+    while (toan <0 ||toan >10){  toan = prompt('nhập vào điểm toán');}
+    let văn = parseInt(prompt('nhập vào điểm văn '));
+   while(văn <0||văn>10){  văn = prompt('nhập vào điểm văn');}
+    let  tieenganh = parseInt(prompt('nhập vào điểm tiếng anh'));
+    while(tieenganh <0||tieenganh>10){  tieenganh = prompt('nhập vào điểm tiếng anh');}
+    let trungbinh = (toan*2 + văn +tieenganh*2)/5;
+    if(trungbinh>=8.5){
+        alert(trungbinh+' tốt');
+    }
+    else if(trungbinh>=7.6){
+        alert(trungbinh+' khá');}
+    else if (trungbinh>=5){alert(trungbinh+' đạt');}
+    else (alert(trungbinh+' không đạt'))
+
+</script>
+</body>
+</html>
